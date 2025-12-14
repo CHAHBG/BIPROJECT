@@ -100,30 +100,32 @@ main {
     /* Ensure content doesn't force scroll */
 }
 
-/* Hero Section */
-.hero {
+/* Header Center */
+.header-center {
     text-align: center;
-    padding: 1rem 2rem;
-    /* Reduced padding */
-    margin-bottom: 0;
-    background: white;
-    border-bottom: 1px solid var(--border-color);
-    flex-shrink: 0;
-    /* Don't shrink the hero */
+    flex: 1;
+    padding: 0 1rem;
 }
 
-.hero h1 {
-    font-size: 1.8rem;
-    /* Slightly smaller for fitting */
-    margin-bottom: 0.25rem;
-    letter-spacing: -0.02em;
+.header-center h1 {
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.2;
+    color: var(--text-primary);
 }
 
-.hero p {
-    font-size: 0.95rem;
+.header-center p {
+    font-size: 0.75rem;
     color: var(--text-secondary);
-    max-width: 600px;
-    margin: 0 auto;
+    margin: 0;
+    display: none;
+    /* Hide subtitle on small screens to save space, or show if space permits. Let's hide for max space based on user request "avoir de l'espace" */
+}
+
+@media (min-width: 1024px) {
+    .header-center p {
+        display: block;
+    }
 }
 
 /* Dashboard Container */
