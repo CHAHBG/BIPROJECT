@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BI Project Presentation</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-gradient"></div>
+
+    <header>
+        <div class="logo">BI Insight</div>
+        <button id="infoBtn" class="info-btn">Infos du Projet</button>
+    </header>
+
+    <div id="infoModal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close">&times;</span>
+            <h2>Équipe du Projet</h2>
+            <div class="team-grid">
+                <div class="member">Cheikh Ahmadou Bamba Gningue</div>
+                <div class="member">Fatima Agne</div>
+                <div class="member">Gedeon Maurice Carvalho</div>
+                <div class="member">Jean Paul Malan</div>
+                <div class="member">Coulibaly Nabatrou</div>
+            </div>
+
+            <h2>Technologies Utilisées</h2>
+            <div class="tools-list">
+                <span class="tool">Excel</span>
+                <span class="tool">Talend</span>
+                <span class="tool">Antigravity</span>
+                <span class="tool">Xamp</span>
+                <span class="tool">MySQL</span>
+                <span class="tool">Tableau</span>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <section class="hero">
+            <h1>PROJET BI - HYPERMARCHE</h1>
+            <p>Une exploration visuelle et interactive de nos analyses stratégiques.</p>
+        </section>
+
+        <section class="dashboard-container">
+            <!-- Tableau Embed Code -->
+            <div class='tableauPlaceholder' id='viz1765670894399' style='position: relative'>
+                <noscript><a href='#'><img alt='Tableau de bord 3 '
+                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HY&#47;HYPERMARCHE&#47;Tableaudebord3&#47;1_rss.png'
+                            style='border: none' /></a></noscript>
+                <object class='tableauViz' style='display:none;'>
+                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                    <param name='embed_code_version' value='3' />
+                    <param name='site_root' value='' />
+                    <param name='name' value='HYPERMARCHE&#47;Tableaudebord3' />
+                    <param name='tabs' value='no' />
+                    <param name='toolbar' value='yes' />
+                    <param name='static_image'
+                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;HY&#47;HYPERMARCHE&#47;Tableaudebord3&#47;1.png' />
+                    <param name='animate_transition' value='yes' />
+                    <param name='display_static_image' value='yes' />
+                    <param name='display_spinner' value='yes' />
+                    <param name='display_overlay' value='yes' />
+                    <param name='display_count' value='yes' />
+                    <param name='language' value='fr-FR' />
+                    <param name='filter' value='publish=yes' />
+                </object>
+            </div>
+            <script type='text/javascript'>
+                var divElement = document.getElementById('viz1765670894399');
+                var vizElement = divElement.getElementsByTagName('object')[0];
+
+                // Force full screen responsive fit
+                vizElement.style.width = '100%';
+                vizElement.style.height = '100%';
+
+                var scriptElement = document.createElement('script');
+                scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Projet Équipe BI. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
